@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Joseph Samuel Brooks
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <!--Start of loading animation, else display content-->
+  <div class="wrapper">
+  <ng-container *ngIf="loading; else content"> 
+  <div @fadeInOut style="display: flex; justify-content: center; align-items: center; margin: 150px;">
+    <div class="loader">
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+    </div>
+  </div>
+</ng-container>
+</div>
+
+<!--Main Content Displayed-->
+<ng-template #content>
+
+  
+  <div id="container">
+    <div @fadeInOut class="content">
+    <app-terminal></app-terminal>
+    </div>
+    <div>
+      <app-landing-page></app-landing-page>
+    </div>
+  </div>
+</ng-template>
+
+</ion-content>
