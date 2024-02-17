@@ -42,6 +42,8 @@
 }
 
 
+
+
 //Pre-dom loading animation state
 
 @keyframes square-animation {
@@ -228,4 +230,20 @@ b {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+}
+
+
+
+//Terminal media queries for mobile and desktop
+@media (max-width: 600px) {
+  app-terminal{
+    width: 100%;
+  }
+  
+}
+
+@media (min-width: 601px) {
+  app-terminal {
+    width: 100vh;
+  }
 }
