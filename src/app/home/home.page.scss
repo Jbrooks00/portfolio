@@ -1,3 +1,13 @@
+ion-content{
+  --background: #d3d3d3;
+
+}
+ion-toolbar{
+  --background: #191940;
+  --color: #d3d3d3;
+
+}
+
 #container {
   text-align: center;
 
@@ -43,149 +53,65 @@
 
 
 
-
-//Pre-dom loading animation state
-
-@keyframes square-animation {
-  0% {
-   left: 0;
-   top: 0;
+//loading animation
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   }
- 
-  10.5% {
-   left: 0;
-   top: 0;
+  body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #191940;
+  overflow: hidden;
   }
- 
-  12.5% {
-   left: 32px;
-   top: 0;
-  }
- 
-  23% {
-   left: 32px;
-   top: 0;
-  }
- 
-  25% {
-   left: 64px;
-   top: 0;
-  }
- 
-  35.5% {
-   left: 64px;
-   top: 0;
-  }
- 
-  37.5% {
-   left: 64px;
-   top: 32px;
-  }
- 
-  48% {
-   left: 64px;
-   top: 32px;
-  }
- 
-  50% {
-   left: 32px;
-   top: 32px;
-  }
- 
-  60.5% {
-   left: 32px;
-   top: 32px;
-  }
- 
-  62.5% {
-   left: 32px;
-   top: 64px;
-  }
- 
-  73% {
-   left: 32px;
-   top: 64px;
-  }
- 
-  75% {
-   left: 0;
-   top: 64px;
-  }
- 
-  85.5% {
-   left: 0;
-   top: 64px;
-  }
- 
-  87.5% {
-   left: 0;
-   top: 32px;
-  }
- 
-  98% {
-   left: 0;
-   top: 32px;
-  }
- 
-  100% {
-   left: 0;
-   top: 0;
-  }
- }
- 
- .loader {
+  .main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 360px;
+  height: 75vh;
   position: relative;
-  width: 96px;
-  height: 96px;
-  transform: rotate(45deg);
- }
- 
- .loader-square {
+  }
+  .balls{
+  display: flex;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 28px;
-  height: 28px;
-  margin: 2px;
-  border-radius: 0px;
-  background: white;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  animation: square-animation 10s ease-in-out infinite both;
- }
- 
- .loader-square:nth-of-type(0) {
-  animation-delay: 0s;
- }
- 
- .loader-square:nth-of-type(1) {
-  animation-delay: -1.4285714286s;
- }
- 
- .loader-square:nth-of-type(2) {
-  animation-delay: -2.8571428571s;
- }
- 
- .loader-square:nth-of-type(3) {
-  animation-delay: -4.2857142857s;
- }
- 
- .loader-square:nth-of-type(4) {
-  animation-delay: -5.7142857143s;
- }
- 
- .loader-square:nth-of-type(5) {
-  animation-delay: -7.1428571429s;
- }
- 
- .loader-square:nth-of-type(6) {
-  animation-delay: -8.5714285714s;
- }
- 
- .loader-square:nth-of-type(7) {
-  animation-delay: -10s;
- }
+  }
+  .ball{
+  position: absolute;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background: peru;
+  border-radius: 50%;
+  margin: 0 20px;
+  animation: ball 4s infinite;
+  }
+  .ball--1{ background-image: linear-gradient(to bottom , #ff3e3e, #cc0909);}
+  .ball--2{ background-image: linear-gradient(to bottom , #ff6600, #c04600);}
+  .ball--3{ background-image: linear-gradient(to bottom , #0019fe, #020da8);}
+  .balls-1 .ball--1{ left: 70px; animation-delay: 0; }
+  .balls-1 .ball--2{ left: 155px; animation-delay: .05s; }
+  .balls-1 .ball--3{ left: 240px; animation-delay: .1s; }
+
+  .balls-2 .ball--1{ left: 100px; animation-delay: 2s; }
+  .balls-2 .ball--2{ left: 150px; animation-delay: 2.05s; }
+  .balls-2 .ball--3{ left: 200px; animation-delay: 2.1s; }
+
+  @keyframes ball {
+  0%, 25%{ top: -50px; }
+  35%{ top: calc(60% - 50px ); }
+  40%{ top: calc(45% - 50px ); }
+  45%{ top: calc(55% - 50px ); }
+  50%, 70%{ top: calc(50% - 25px); }
+  80%, 100%{ top: 0%; }
+  }
+
 
 
  //Button selection styling
