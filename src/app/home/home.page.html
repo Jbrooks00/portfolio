@@ -1,11 +1,13 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="custom-toolbar">
     <ion-title class="ion-text-center">
       Joseph Samuel Brooks
-    </ion-title>
+    </ion-title> 
+    <div class="return-button">
+      <ion-button slot="end" *ngIf="!showButtons" routerLink="/standard-site"><div style="color: white;">Webpage</div></ion-button>
+    </div>
   </ion-toolbar>
 </ion-header>
-
 
 <ion-content [fullscreen]="true">
 

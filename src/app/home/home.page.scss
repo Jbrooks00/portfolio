@@ -247,3 +247,17 @@ b {
     width: 100vh;
   }
 }
+
+.custom-toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.return-button{
+  position: absolute;
+  padding-top: 5px;
+  padding-right: 5px;
+  top: 0;
+  right: 0;
+}
