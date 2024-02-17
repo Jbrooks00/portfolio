@@ -18,8 +18,9 @@ export class HomePage implements OnInit {
   loading = true;
 
   constructor() {}
-  
+  public showButtons = true;
   ngOnInit() {
+    
     setTimeout(() => {
       this.loading = false;
     }, 3000);

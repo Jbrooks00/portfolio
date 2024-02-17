@@ -24,20 +24,33 @@
     </div>
   </div>
 </ng-container>
-</div>
+
 
 <!--Main Content Displayed-->
 <ng-template #content>
+  <div id="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
 
-  
-  <div id="container">
-    <div @fadeInOut class="content">
-    <app-terminal></app-terminal>
+    <!-- Conditionally render the buttons based on the 'showButtons' variable -->
+    <div *ngIf="showButtons">
+      <div style="margin-bottom: 10px;">
+        <ion-router-link routerLink="/standard-site" class="ion-activatable ripple-parent rounded-rectangle">
+          Standard Site
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-router-link>
+      </div>
+        
+      <div style="margin-top: 10px;">
+        <ion-router-link (click)="showButtons = false" class="ion-activatable ripple-parent rounded-rectangle">
+          Shell Terminal
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-router-link>
+      </div>
     </div>
-    <div>
-      <app-landing-page></app-landing-page>
-    </div>
+
+    <!-- Display the <app-terminal> component when 'showButtons' is false -->
+    <app-terminal *ngIf="!showButtons" class="centered"></app-terminal>
+
   </div>
 </ng-template>
-
+</div>
 </ion-content>
