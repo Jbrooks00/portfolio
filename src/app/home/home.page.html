@@ -28,7 +28,7 @@
 
 <!--Main Content Displayed-->
 <ng-template #content>
-  <div id="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+  <div id="container" style="display: flex; flex-direction: column; justify-content: space-around; align-items: center; height: 100vh;">
 
     <!-- Conditionally render the buttons based on the 'showButtons' variable -->
     <div *ngIf="showButtons">
@@ -39,16 +39,27 @@
         </ion-router-link>
       </div>
         
-      <div style="margin-top: 10px;">
-        <ion-router-link (click)="showButtons = false" class="ion-activatable ripple-parent rounded-rectangle">
-          Shell Terminal
-          <ion-ripple-effect></ion-ripple-effect>
-        </ion-router-link>
-      </div>
+    <div style="margin-top: 10px;">
+      <ion-router-link (click)="showButtons = false" class="ion-activatable ripple-parent rounded-rectangle">
+        Shell Terminal
+        <ion-ripple-effect></ion-ripple-effect>
+      </ion-router-link>  
     </div>
+  </div>
+  <!--If shell terminal is selected, stay in root directory and display component.-->
+  <app-terminal *ngIf="!showButtons" style="width: 100vh;"></app-terminal>
 
-    <!-- Display the <app-terminal> component when 'showButtons' is false -->
-    <app-terminal *ngIf="!showButtons" class="centered"></app-terminal>
+  <ion-card *ngIf="!showButtons && showCard" style="position: absolute; left: 0;">
+    <ion-card-header>
+      <ion-card-title>Terminal Portfolio</ion-card-title>
+      <ion-card-subtitle>This is a custom shell terminal programmed with information about me!</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      If you would like to return to the main page, click <a href="/home">here</a>. Remember, you can always view the standard site, to navigate simply click <ion-router-link routerLink="/standard-site">here!</ion-router-link> <br> <ion-button (click)="hideCard()">Got it!</ion-button>
+    </ion-card-content>
+  </ion-card>
+
 
   </div>
 </ng-template>

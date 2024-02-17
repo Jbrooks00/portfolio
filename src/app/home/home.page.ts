@@ -16,14 +16,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
   loading = true;
-
-  constructor() {}
+  showCard= true;
   public showButtons = true;
+  constructor() {}
+  
   ngOnInit() {
     
     setTimeout(() => {
       this.loading = false;
     }, 3000);
+  
+  }
+
+  hideCard() {
+    this.showCard = false;
   }
 
 
