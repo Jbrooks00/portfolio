@@ -8,6 +8,10 @@ ion-toolbar{
 
 }
 
+ion-card{
+  --background: #d3d3d3;
+}
+
 #container {
   text-align: center;
 
@@ -51,6 +55,15 @@ ion-toolbar{
   min-height: 300px;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
 
 
 //loading animation
@@ -95,9 +108,9 @@ ion-toolbar{
   .ball--1{ background-image: linear-gradient(to bottom , #ff3e3e, #cc0909);}
   .ball--2{ background-image: linear-gradient(to bottom , #ff6600, #c04600);}
   .ball--3{ background-image: linear-gradient(to bottom , #0019fe, #020da8);}
-  .balls-1 .ball--1{ left: 70px; animation-delay: 0; }
-  .balls-1 .ball--2{ left: 155px; animation-delay: .05s; }
-  .balls-1 .ball--3{ left: 240px; animation-delay: .1s; }
+  .balls-1 .ball--1{ left: 67px; animation-delay: 0; }
+  .balls-1 .ball--2{ left: 149px; animation-delay: .05s; }
+  .balls-1 .ball--3{ left: 230px; animation-delay: .1s; }
 
   .balls-2 .ball--1{ left: 100px; animation-delay: 2s; }
   .balls-2 .ball--2{ left: 150px; animation-delay: 2.05s; }
@@ -163,7 +176,8 @@ b {
 //Terminal media queries for mobile and desktop
 @media (max-width: 600px) {
   app-terminal{
-    width: 100%;
+    width: 100vw;
+
   }
   
 }
@@ -171,6 +185,7 @@ b {
 @media (min-width: 601px) {
   app-terminal {
     width: 100vh;
+    padding: 10px;
   }
 }
 

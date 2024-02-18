@@ -32,5 +32,6 @@ export class HomePage implements OnInit {
     this.showCard = false;
   }
 
+  
 
 }
