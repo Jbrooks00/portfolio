@@ -3,8 +3,8 @@ ion-content{
 
 }
 ion-toolbar{
-  --background: #191940;
-  --color: #d3d3d3;
+  --background: #e0e0e0;
+  --color: #000000;
 
 }
 
@@ -55,14 +55,23 @@ ion-card{
   min-height: 300px;
 }
 
-.overlay {
-  position: fixed;
+.left-side {
+  position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
+  background-color: #d3d3d3;
+
+}
+
+.right-side {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #1f1f1f;
+  color: #d3d3d3;
 }
 
 
@@ -141,7 +150,7 @@ ion-card{
 
   margin: 0 auto;
 }
-
+ripple-parent
 b {
   width: 100%;
 }
@@ -154,7 +163,20 @@ b {
   position: relative;
   overflow: hidden;
 
-  border: 1px solid #ddd;
+  border: 3px solid #000000;
+
+  user-select: none;
+}
+
+.ripple-parent1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+
+  border: 3px solid #c7c7c7;
 
   user-select: none;
 }
