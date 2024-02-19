@@ -8,7 +8,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content id="content" [fullscreen]="true">
 
   <!--Start of loading animation, else display content-->
   
@@ -17,12 +17,12 @@
     <div class="main">
       <div class="balls balls-1">
       <div class="ball ball--1"></div>
-      <div class="ball ball--2"></div>
+
       <div class="ball ball--3"></div>
       </div>
       <div class="balls balls-2">
       <div class="ball ball--1"></div>
-      <div class="ball ball--2"></div>
+  
       <div class="ball ball--3"></div>
       </div>
       </div>
@@ -40,16 +40,16 @@
           <ion-row>
             <ion-col class="left-side" size="6" style="width: 50%; display: flex; justify-content: center; align-items: center;">
                 
-                  <h5 routerLink="/portfolio" class="ion-activatable ripple-parent rounded-rectangle">Traditional Site</h5>
+                  <h4 style="color: #000000" routerLink="/portfolio" class="ion-activatable ripple-parent rounded-rectangle">Traditional Site</h4>
                   <ion-ripple-effect></ion-ripple-effect>
               
             </ion-col>
 
             <ion-col class="right-side" size="6" style="width: 50%; display: flex; justify-content: center; align-items: center;">
-              <h5 (click)="showButtons = false" class="ion-activatable ripple-parent1 rounded-rectangle">
+              <h4 (click)="showButtons = false" class="ion-activatable ripple-parent1 rounded-rectangle">
                 Shell Terminal
                 <ion-ripple-effect></ion-ripple-effect>
-              </h5>
+              </h4>
             </ion-col>
           </ion-row>
         </ion-grid>
@@ -58,7 +58,9 @@
 </ng-template>
   <!--Display terminal when terminal is selected..-->
     
+</ion-content>
 
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
 
     <ion-card *ngIf="!showButtons && showCard" style=" max-width: 400px; position: absolute; top: 150px; left: 0; right: 0;  margin: auto; z-index: 2;">
 
@@ -81,6 +83,8 @@
 
     </ion-card>
 
-    <app-terminal *ngIf="!showButtons" style="position: relative; z-index: 1;"></app-terminal>
-    
-</ion-content>
+
+   
+      <app-terminal *ngIf="!showButtons" cdkDrag style="position: relative; padding-bottom:850px;"></app-terminal>
+  
+</div>

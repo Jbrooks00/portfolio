@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { TerminalPageModule } from '../terminal/terminal.module';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 
@@ -16,7 +17,8 @@ import { TerminalPageModule } from '../terminal/terminal.module';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    TerminalPageModule
+    TerminalPageModule,
+    DragDropModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [HomePage, ]
