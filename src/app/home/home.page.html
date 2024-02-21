@@ -56,35 +56,37 @@
       </div>
 
 </ng-template>
-  <!--Display terminal when terminal is selected..-->
+  <!--Display terminal when selected..-->
     
 </ion-content>
 
 <div style="display: flex; top:50px; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
 
+    <div style="justify-content: center; align-items: center; height: 100%">
     <ion-card *ngIf="!showButtons && showCard" style=" max-width: 400px; position: absolute; top: 150px; left: 0; right: 0;  margin: auto; z-index: 2;">
 
       <ion-card-header>
-        <ion-card-title style="padding: 15px; text-align: center;">
-          <ion-text style="color:black; font-weight:bold;">Terminal Portfolio</ion-text>
+        <div class="card-header-content">
+        <ion-card-title style="padding: 15px; text-align: center; text-transform: none">
+          <ion-text style="color:black; font-weight: 400;">Terminal Portfolio</ion-text>
         </ion-card-title>
 
-        <ion-card-subtitle style="padding-left: 15px; text-align:center;">
-          <ion-text style="color:black; font-size: small; font-weight:600;">This is my portfolio programmed into a shell terminal!</ion-text>
+        <ion-card-subtitle style="padding:15px; text-align:center; text-transform:none">
+          <ion-text style="color:black; font-size: small; font-weight:normal">This is my portfolio programmed into a shell terminal!</ion-text>
         </ion-card-subtitle> 
+      </div>
       </ion-card-header>
      
       <ion-card-content style="padding: 15px; text-align:center;">
         <ion-text style="color:black; font-size:small; font-weight:500;">Remember, you can always view the standard site, to navigate simply click </ion-text>
         <ion-router-link routerLink="/portfolio">here!</ion-router-link> 
-        <br> 
+        <br>
         <ion-button (click)="hideCard()" style="justify-content: center; padding:15px; color:light;">Confirm</ion-button>
       </ion-card-content>
 
     </ion-card>
+  </div>
 
-
-   
-      <app-terminal *ngIf="!showButtons" cdkDrag style="position: relative; padding-bottom:380px;"></app-terminal>
+      <app-terminal *ngIf="!showButtons" style="position: relative; padding-bottom:380px;"></app-terminal>
   
 </div>

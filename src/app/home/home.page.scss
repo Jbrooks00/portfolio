@@ -13,6 +13,18 @@ ion-card{
 }
 
 
+.card-header-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header-content ion-card-subtitle{
+  order: 2;
+}
+.card-header-content ion-card-title{
+  order: 1;
+}
+
 #container {
   text-align: center;
 

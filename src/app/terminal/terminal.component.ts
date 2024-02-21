@@ -252,6 +252,7 @@ function submitCommand(command: string) {
     var section_name: string = command.split(" ")[1];
     console.log("Section name: " + section_name);
 
+ 
     if (section_name == 'Home' || section_name == 'About' || section_name == 'Education' || section_name == 'Experience' || section_name == 'Projects' || section_name == 'Skills' || section_name == 'Contact'){
       var output = processSectionName(section_name);
       history.push(output);

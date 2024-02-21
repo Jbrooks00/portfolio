@@ -1,12 +1,15 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-<div class="terminal-window">
+<div class="terminal-window" cdkDrag>
+
+    <div cdkDragHandle>
     <header class="terminal-window-header">
         <div class="button green" id="green-btn"></div>
         <div class="button yellow"></div>
         <div class="button red"></div>
     </header>
+    </div>
     <section class="terminal">
         <div class="history" ></div>
         
