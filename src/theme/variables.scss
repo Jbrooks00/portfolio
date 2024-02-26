@@ -1,8 +1,15 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+@font-face {
+  font-family: 'League Spartan';
+  src: url("../assets/fonts/LeagueSpartan-Regular.ttf");
+}
+
 /** Ionic CSS Variables **/
 :root {
+
+  --ion-font-family: "League Spartan";
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
