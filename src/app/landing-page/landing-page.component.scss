@@ -61,7 +61,7 @@ ion-grid {
   
     &::before {
       transform: translateZ(4rem);
-      border: 5px solid #f96b59;
+      border: 5px solid #59f961;
       &:hover {
         transform: translateZ(0);
       }
@@ -69,7 +69,7 @@ ion-grid {
   
     &::after {
       transform: translateZ(-4rem);
-      background: #f96b59;
+      background: #59f961;
       box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.25);
       &:hover {
         transform: translateZ(-1px);
@@ -90,7 +90,7 @@ ion-grid {
     animation-timeline: scroll();
   }
   
-  @keyframes scroll-watcher {
+  @keyframes scroll-watc59f961her {
     to {
       scale: 1 1;
     }
