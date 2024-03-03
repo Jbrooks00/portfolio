@@ -24,6 +24,8 @@ ion-grid {
   .card-skills{
     width: 250px;
     height: 250px;
+    box-shadow: 0 0 10px rgba(89, 249, 97, 0.6);
+    background-color: #1F1F1F;
   }
 
   .ion-text-center{
@@ -47,10 +49,14 @@ ion-grid {
 
     ion-card.card-skills{
       display: block;
+      background-color: #1F1F1F;
+      box-shadow: 0 0 10px rgba(89, 249, 97, 0.6);
       width: 125px;
       height: 125px;
     }
-
+    .oversized-text{
+      font-size: 20px;
+    }
     .ion-text-center{
       padding-top: 0;
       max-height: 225px;  /* Adjust as needed */
@@ -61,9 +67,14 @@ ion-grid {
       font-size: 20px;
       font-weight: 600;
     }
+    h2{
+      font-size: 20px;
+      padding-top: 20px;
+    }
     p{
       font-size: 12px;}
 }
+
 
   @media only screen and (max-width: 600px) {
     .projects-row{
