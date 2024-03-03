@@ -1,26 +1,24 @@
 ion-grid {
-    height: 85vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(31, 31, 31, 0.993);
+    background-color: #1F1F1F;
   }
 
-ion-grid .custom-grid{
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(31, 31, 31, 0.993);
-  }
+.custom-grid{
+  height: auto;
+  background-color: #1F1F1F;
+}
 
 
 
   /**ionic card styling **/
   .card-projects{
-    background-color: #59f9619c;
-    height: 450px; 
-    width: 450px;
+    background-color: #1F1F1F;
+    height: 400px; 
+    width: 400px;
+    box-shadow: 0 0 10px rgba(89, 249, 97, 0.6);
   }
 
   .card-skills{
@@ -28,22 +26,44 @@ ion-grid .custom-grid{
     height: 250px;
   }
 
+  .ion-text-center{
+    padding-top: 25%;
+  }
   @media only screen and (max-width: 600px) {
-    .card-projects {
-      display: block;
-      width: 100%;
-      height: 50vw;
 
-      
+    /* Remove the max-width on small screens */
+    ion-grid ion-row ion-col {
+      max-width: none !important;
+      width: auto !important;
     }
 
-    .card-skills{
+    ion-card.card-projects {
+      display: block;
+      box-sizing: border-box; 
+      width: 225px;  
+      height: 225px;
+       
+    }
+
+    ion-card.card-skills{
       display: block;
       width: 125px;
       height: 125px;
     }
 
-  }
+    .ion-text-center{
+      padding-top: 0;
+      max-height: 225px;  /* Adjust as needed */
+      overflow-y: auto;
+    }
+
+    h1{
+      font-size: 20px;
+      font-weight: 600;
+    }
+    p{
+      font-size: 12px;}
+}
 
   @media only screen and (max-width: 600px) {
     .projects-row{

@@ -25,12 +25,11 @@
   </ion-grid>
 
   <!--Resume Section-->
+ 
   <ion-grid>
     <ion-row style="width: 100%;">
       <ion-col size="12" style="display: flex; justify-content: center; align-items: center; text-align: center; width: 100%; padding: 15px;">
-        <h2 style="justify-content:center;" href="../../assets/Resumepic.PNG" download="JosephBrooksResume">Download my resume!
-      
-        </h2>
+        <h2 style="justify-content:center;" href="../../assets/Resumepic.PNG" download="JosephBrooksResume">Download my resume!</h2>
       </ion-col>
     
       <ion-col size="12" style="display: flex; justify-content:center; align-items:center;">
@@ -41,40 +40,47 @@
 
 
   <!--Projects Section-->
-  <ion-grid>
-    <ion-row style="width: 100%;">
-      <ion-col size="12" style="display: flex;">
-        <h2>My Projects</h2>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-grid class="custom-grid">
-    <ion-row class="projects-row" style="width: 100%; height: 85vh;">
-      <ion-col size="4" style="margin-inline: auto; display: flex; justify-content: center;">
-        <ion-card class="card-projects">
-          <ion-text  style="font-size:35px; padding-top:40%;">
-            Portfolio
-          </ion-text>
-        </ion-card>
-      </ion-col>
-      <ion-col size="4" style="margin-inline: auto; display: flex; justify-content: center;">
-        <ion-card class="card-projects">
-          <ion-text  style="justify-content:center; font-size:35px; padding-top:40%;">
-            Go-Mechanic
-          </ion-text>
-        </ion-card>
-      </ion-col>
-      <ion-col size="4" style="margin-inline: auto; display: flex; justify-content: center;">
-        <ion-card class="card-projects">
-          <ion-text  style="font-size:35px; padding-top:40%;">
-            Incoming...
-          </ion-text>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
+  <div style="background-color: #1F1F1F; padding-top: 40vh;">
+    <ion-text>
+      <h2 style="background-color: #1F1F1F; margin: 0;">My Projects</h2>
+    </ion-text>
+    <ion-grid>
+      <ion-row class="projects-row" style="width: 100%; height: 85vh;">
+        <ion-col size="4"
+          style="margin-inline: auto; display: flex; justify-content: center; width:none !important; max-width: none !important; ">
+          <a href="https://github.com/Jbrooks00/Go-Mechanic" target="_blank">
+            <ion-card class="card-projects">
+              <div class="ion-text-center" style="position:absolute">
+                <h1>Go-Mechanic</h1>
+                <p style="padding-left: 15px; padding-right: 15px;">While studying at Wayne State University, I had lead a
+                  group of students develop an uber-like web application for mobile mechanics.</p>
+              </div>
+            </ion-card>
+          </a>
+        </ion-col>
+        <ion-col size="4" style="margin-inline: auto; display: flex; justify-content: center;">
+          <a href="https://github.com/Jbrooks00" target="_blank">
+            <ion-card class="card-projects">
+              <div class="ion-text-center" style="position:absolute">
+                <h1>Dealer Performance App</h1>
+                <p style="padding-left: 15px; padding-right: 15px;">A capstone project for Urban Science, I had lead a
+                  group of students develop a sales analytics mobile application for dealerships.</p>
+              </div>
+            </ion-card>
+          </a>
+        </ion-col>
+        <ion-col size="4" style="margin-inline: auto; display: flex; justify-content: center;">
+          <a href="https://github.com/Jbrooks00" target="_blank">
+            <ion-card class="card-projects">
+              <div class="ion-text-center">
+                <h1>Incoming...</h1>
+              </div>
+            </ion-card>
+          </a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
   <!--Skills section-->
   <ion-grid>
