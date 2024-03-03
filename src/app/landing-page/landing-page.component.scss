@@ -1,10 +1,56 @@
 ion-grid {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(31, 31, 31, 0.993);
   }
+
+ion-grid .custom-grid{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(31, 31, 31, 0.993);
+  }
+
+
+
+  /**ionic card styling **/
+  .card-projects{
+    background-color: #59f9619c;
+    height: 450px; 
+    width: 450px;
+  }
+
+  .card-skills{
+    width: 250px;
+    height: 250px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .card-projects {
+      display: block;
+      width: 100%;
+      height: 50vw;
+
+      
+    }
+
+    .card-skills{
+      display: block;
+      width: 125px;
+      height: 125px;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .projects-row{
+      display: block;
+    }
+  }
+
 
   h2{
     margin-bottom:20px;
