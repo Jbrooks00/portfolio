@@ -27,7 +27,17 @@ ion-grid {
     box-shadow: 0 0 10px rgba(89, 249, 97, 0.6);
     background-color: #1F1F1F;
   }
+  
+  .card-experience{
+    background-color: #1F1F1F;
+    box-shadow: 0 0 10px rgba(249, 89, 89, 0.6);
+    width: 400px;
+    height: 400px;
+  }
 
+  .oversized-text{
+    font-size: 20px;
+  }
   .ion-text-center{
     padding-top: 25%;
   }
@@ -53,6 +63,14 @@ ion-grid {
       box-shadow: 0 0 10px rgba(89, 249, 97, 0.6);
       width: 125px;
       height: 125px;
+    }
+
+    ion-card.card-experience{
+      display: block;
+      background-color: #1F1F1F;
+      box-shadow: 0 0 10px rgba(249, 89, 89, 0.6);
+      width: 225px;
+      height: 225px;
     }
     .oversized-text{
       font-size: 20px;

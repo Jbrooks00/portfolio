@@ -2,7 +2,7 @@
 <ion-content>
   <ion-grid>
     <ion-row style="width: 100%; display: flex; justify-content: center; align-items: center;">
-      <ion-icon (click)="navigateToHome()" name="log-out-outline" style="padding:15px; position: absolute; top: 0; right: 0; font-size: 35px; color: rgba(89, 249, 97, 0.6);"></ion-icon>
+      <ion-icon (click)="navigateToHome()" name="log-out-outline" style="padding:15px; position: absolute; top: 0; right: 0; font-size: 35px; color: rgba(89, 249, 97, 0.5);"></ion-icon>
       <ion-col size="6" style="width: 100%; display: flex; justify-content: center;">
         <ion-avatar style="width: 200px; height: 200px;">
           <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
@@ -141,32 +141,60 @@
 </div>
 
   <!--Experience Section-->
-  <ion-grid>
-    <ion-row style="width: 100%;">
-      <ion-col size="6" style="display: flex; justify-content: center;">
+  <div style="background-color: #1F1F1F; padding-top: 40vh;">
+    <ion-text>
+      <h2 style="background-color: #1F1F1F; margin: 0;">Work Experience</h2>
+    </ion-text>
+    <ion-grid>
+      <ion-row class="projects-row" style="width: 100%; height: 85vh;">
+        <ion-col size="6"
+          style="margin-inline: auto; display: flex; justify-content: center; width:none !important; max-width: none !important; ">
+          <a href="https://www.instagram.com/jsbcoatings/" target="_blank">
+            <ion-card class="card-experience" >
+              <div class="ion-text-center" style="position:absolute">
+                <h1>JSB Coatings</h1>
+                <p style="padding-left: 15px; padding-right: 15px;">Founded and established a one man army powdercoating service. Specializing in 
+                  the automotive sector, refinishing performance wheels, parts, and much more!  
+                </p>
+              </div>
+            </ion-card>
+          </a>
+        </ion-col>
+        <ion-col size="6" style="margin-inline: auto; display: flex; justify-content: center;">
 
-      </ion-col>
-      <ion-col size="6" style="display: flex; justify-content: flex-end; align-items: center; text-align: right; width: 100%; padding-right: 15px;">
-        <div>
-          <h1>Section 6</h1>
-          <h2>Experience</h2>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+            <ion-card class="card-experience" style="box-shadow: 0 0 10px rgba(89, 92, 249, 0.6);">
+              <div class="ion-text-center" style="position:absolute">
+                <h1>Blue Cross Blue Shield</h1>
+                <p style="padding-left: 15px; padding-right: 15px;">I served as an executive services intern where I shadowed appeals and grievances
+                  analysts, and learned the process of handling client complaints. Furthermore, I had construcuted many documents for the executive team, the most
+                  notable being the audit reports for the years 2021 and 2022.
+                </p>
+              </div>
+            </ion-card>
 
-  <ion-grid>
-    <ion-row style="width: 100%;">
-      <ion-col size="6" style="display: flex; justify-content: center;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
-      </ion-col>
-      <ion-col size="6" style="display: flex; justify-content: flex-end; align-items: center; text-align: right; width: 100%; padding-right: 15px;">
-        <div>
-          <h1>Section 7</h1>
-          <h2>Education</h2>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <!--Education-->
+  <div style="background-color: #1F1F1F; padding-top: 40vh;">
+    <ion-text>
+      <h2 style="background-color: #1F1F1F; margin: 0;">Education</h2>
+    </ion-text>
+    <ion-grid>
+      <ion-row class="projects-row" style="width: 100%; height: 85vh;">
+        <ion-col size="12" style="margin-inline: auto; display: flex; justify-content: center; width:none !important; max-width: none !important; ">
+            <ion-card class="card-projects">
+              <div class="ion-text-center">
+                <h1>Wayne State University</h1>
+                <h2 style="font-size: 20px;">2019-2023</h2>
+                <p style="padding-left: 35px; padding-right: 15px;">Bachelor of Science in Computer Science</p>
+              </div>
+            </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
 </ion-content>
