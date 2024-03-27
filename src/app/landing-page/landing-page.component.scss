@@ -3,33 +3,36 @@ ion-grid {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1F1F1F;
+    background-color: #9d9d9d;
   }
 
 .custom-grid{
   height: auto;
-  background-color: #1F1F1F;
+  background-color: #9d9d9d;
 }
 
 
-
+ion-avatar{
+  width:400px;
+  height:auto;
+}
   /**ionic card styling **/
   .card-projects{
-    background-color: #1F1F1F;
+    background-color: #157a8a;
     height: 400px; 
     width: 400px;
-    box-shadow: 0 0 10px rgba(89, 249, 97, 0.6);
+    box-shadow: 0 0 20px #157a8a;
   }
 
   .card-skills{
     width: 250px;
     height: 250px;
-    box-shadow: 0 0 10px rgba(89, 249, 97, 0.6);
-    background-color: #1F1F1F;
+    box-shadow: 0 0 10px #157a8a;
+    background-color: #157a8a;
   }
   
   .card-experience{
-    background-color: #1F1F1F;
+    background-color: #157a8a;
     box-shadow: 0 0 10px rgba(249, 89, 89, 0.6);
     width: 400px;
     height: 400px;
@@ -40,6 +43,9 @@ ion-grid {
   }
   .ion-text-center{
     padding-top: 25%;
+  }
+  .skills-text{
+    padding-top: 33%;
   }
   @media only screen and (max-width: 600px) {
 
@@ -52,23 +58,23 @@ ion-grid {
     ion-card.card-projects {
       display: block;
       box-sizing: border-box; 
-      width: 225px;  
+      width: 300px;  
       height: 225px;
        
     }
 
     ion-card.card-skills{
       display: block;
-      background-color: #1F1F1F;
-      box-shadow: 0 0 10px rgba(89, 249, 97, 0.6);
-      width: 125px;
+      background-color: #157a8a;
+      box-shadow: 0 0 10px #157a8a;
+      width: 220px;
       height: 125px;
     }
 
     ion-card.card-experience{
       display: block;
-      background-color: #1F1F1F;
-      box-shadow: 0 0 10px rgba(249, 89, 89, 0.6);
+      background-color: #157a8a;
+      box-shadow: 0 0 10px #157a8a;
       width: 225px;
       height: 225px;
     }
@@ -91,6 +97,15 @@ ion-grid {
     }
     p{
       font-size: 12px;}
+
+      ion-avatar {
+        width: 250px;
+        height: auto;
+      }
+
+    .gifted{
+      padding-top: 25%;
+    }
 }
 
 

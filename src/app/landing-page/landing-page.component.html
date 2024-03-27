@@ -1,49 +1,38 @@
 
 <ion-content>
-  <ion-grid>
-    <ion-row style="width: 100%; display: flex; justify-content: center; align-items: center;">
-      <ion-icon (click)="navigateToHome()" name="arrow-back-outline" style="padding:15px; position: absolute; top: 0; right: 0; font-size: 35px; color: rgba(89, 249, 97, 0.5);"></ion-icon>
-      <ion-col size="6" style="width: 100%; display: flex; justify-content: center;">
-        <ion-avatar style="width: 200px; height: 200px;">
-          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-        </ion-avatar>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+
 
   <!--Intro Section-->
-  <ion-grid>
-    <ion-row style="width: 100%;">
-      <ion-col size="12" style="display: flex; justify-content: center; text-align: center; width: 100%; padding-right: 15px;">
-        <div>
-          <h2>Hi, I'm Joseph Brooks</h2>
-          <p style="padding: 25px;">A recent computer science graduate with a passion to develop. This porfolio website is powered by Angluar/Ionic and hosted on AWS. My goal is to contribute on meaningful projects with a team of like minded individuals. </p>
-          <br>
-          <p>Interested in collaborating? <a style="color:rgb(224, 224, 224)" href="mailto:josephbrooks000@gmail.com">contact me</a></p>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <!--Resume Section-->
- 
-  <ion-grid>
-    <ion-row style="width: 100%;">
-      <ion-col size="12" style="display: flex; justify-content: center; align-items: center; text-align: center; width: 100%; padding: 15px;">
-        <a href="https://www.linkedin.com/in/joseph-brooks-a5487b1b7/overlay/1708188024297/single-media-viewer/?profileId=ACoAADJ_FyAB6Lk266MpBMQbA3VRYmjCXz9wjA0" target="_blank"><h2 style="justify-content:center;" href="../../assets/Resumepic.PNG" download="JosephBrooksResume">Download my resume!</h2></a>
-      </ion-col>
-    
-      <ion-col size="12" style="display: flex; justify-content:center; align-items:center;">
-        <div style="width:36vh; height:50vh" class="resume"></div>
-      </ion-col>
-    </ion-row>
+  <ion-grid style=" padding-top: 5vh;">
+    <ion-icon (click)="navigateToHome()" name="arrow-back-outline"
+      style="padding:15px; position: absolute; top: 0; right: 0; font-size: 35px; color: rgb(0, 0, 0);"></ion-icon>
+    <div
+      style="display: flex; flex-direction:column; align-items:center; justify-content:center;">
+      <ion-avatar>
+        <img alt="Joseph" src="../../assets/standstill.png" />
+      </ion-avatar>
+  
+      <ion-row style="width: 100%;">
+        <ion-col size="12"
+          style="display: flex; justify-content: center; text-align: center; width: 100%; padding-right: 15px;">
+          <div>
+            <h2 style=" color:#1a1a1a">Hi, I'm Joseph Brooks</h2>
+            <p style="padding: 25px; color:#1a1a1a">It's nice to meet you! I'm a computer scientist with a passion to develop! I enjoy
+              IT, security and just started working as a Systems Admin. </p>
+            <br>
+            <p style="color:#1a1a1a">Feel free to contact me <a style="color:#155761"
+                href="mailto:josephbrooks000@gmail.com">here!</a></p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
   </ion-grid>
 
 
   <!--Projects Section-->
-  <div style="background-color: #1F1F1F; padding-top: 40vh;">
+  <div style="background-color:#9d9d9d; padding-top: 50vh;">
     <ion-text>
-      <h2 style="background-color: #1F1F1F; margin: 0;">My Projects</h2>
+      <h2 style="background-color: #9d9d9d; margin: 0; color:#1a1a1a">My Projects</h2>
     </ion-text>
     <ion-grid>
       <ion-row class="projects-row" style="width: 100%; height: 85vh;">
@@ -52,9 +41,9 @@
           <a href="https://github.com/Jbrooks00/Go-Mechanic" target="_blank">
             <ion-card class="card-projects">
               <div class="ion-text-center" style="position:absolute">
-                <h1>Go-Mechanic</h1>
-                <p style="padding-left: 15px; padding-right: 15px;">While studying at Wayne State University, I had lead a
-                  group of students develop an uber-like web application for mobile mechanics.</p>
+                <h1 style="color: #09272c">Go-Mechanic</h1>
+                <p style="padding-left: 15px; padding-right: 15px; color: #272727">While studying at WSU, I had lead a
+                  team of students develop an uber-like web application for mobile mechanics.</p>
               </div>
             </ion-card>
           </a>
@@ -63,8 +52,8 @@
           <a href="https://github.com/Jbrooks00" target="_blank">
             <ion-card class="card-projects">
               <div class="ion-text-center" style="position:absolute">
-                <h1>Dealer Performance App</h1>
-                <p style="padding-left: 15px; padding-right: 15px;">A capstone project for Urban Science, I had lead a
+                <h1 style="color: #09272c">Dealer Performance App</h1>
+                <p style="padding-left: 15px; padding-right: 15px; color:#272727">A capstone project for Urban Science, I had lead a
                   group of students develop a sales analytics mobile application for dealerships.</p>
               </div>
             </ion-card>
@@ -74,7 +63,8 @@
           <a href="https://github.com/Jbrooks00" target="_blank">
             <ion-card class="card-projects">
               <div class="ion-text-center">
-                <h1>Incoming...</h1>
+                <h1 class="gifted" style="color:#09272c">My Github Projects</h1>
+                <p></p>
               </div>
             </ion-card>
           </a>
@@ -85,53 +75,53 @@
 
   <!--Skills section-->
 
-  <div style="background-color: #1F1F1F; padding-top: 40vh;">
+  <div style="padding-top: 50vh; background-color: #9d9d9d;">
     <ion-text>
-      <h2 style="background-color: #1F1F1F; margin: 0; padding-bottom:60px;">Skills</h2>
+      <h2 style="background-color: #9d9d9d; margin: 0; padding-bottom:60px; color:#09272c">Skills</h2>
     </ion-text>
 
   <ion-grid class="custom-grid">
     <ion-row class="projects-row" style="width: 100%;">
       <ion-col size="4" style="margin-inline: auto; display: flex; justify-content: center;">
         <ion-card class="card-skills">
-          <div class="ion-text-center">
-            <h2>C++</h2>
+          <div class="ion-text-center skills-text">
+            <h2 style="color:#09272c">C++</h2>
           </div>
         </ion-card>
       </ion-col>
       <ion-col size="4" style="margin-inline: auto; display: flex; justify-content: center;">
         <ion-card class="card-skills">
-          <div class="ion-text-center">
-            <h2>Java</h2>
+          <div class="ion-text-center skills-text">
+            <h2 style="color:#09272c">Java</h2>
           </div>
         </ion-card>
       </ion-col>
       <ion-col size="4" style="margin-inline: auto; display: flex; justify-content: center;">
         <ion-card class="card-skills">
-          <div class="ion-text-center">
-            <h2 class="oversized-text">TypeScript</h2>
+          <div class="ion-text-center skills-text">
+            <h2 style="color:#09272c">TypeScript</h2>
           </div>
         </ion-card>
       </ion-col>
       <ion-col size="4" style="margin-inline: auto; display: flex; justify-content: center;">
         <ion-card class="card-skills">
-          <div class="ion-text-center">
-            <h2>Python</h2>
+          <div class="ion-text-center skills-text">
+            <h2 style="color:#09272c">Python</h2>
           </div>
         </ion-card>
       </ion-col>
       <ion-col size="4" style="margin-inline: auto; display: flex; justify-content: center;">
         <ion-card class="card-skills">
-          <div class="ion-text-center">
-            <h2>SQL</h2>
+          <div class="ion-text-center skills-text">
+            <h2 style="color:#09272c">SQL</h2>
           </div>
         </ion-card>
       </ion-col>
       <ion-col size="4" style="margin-inline: auto; display: flex; justify-content: center;">
         <a href="https://www.linkedin.com/in/joseph-brooks-a5487b1b7/?trk=people-guest_people_search-card" target="_blank">
         <ion-card class="card-skills">
-          <div class="ion-text-center">
-            <h2>and more!</h2>
+          <div class="ion-text-center skills-text">
+            <h2 style="color:#09272c">and more!</h2>
           </div>
         </ion-card>
       </a>
@@ -141,9 +131,9 @@
 </div>
 
   <!--Experience Section-->
-  <div style="background-color: #1F1F1F; padding-top: 40vh;">
+  <div style="background-color: #9d9d9d; padding-top: 40vh;">
     <ion-text>
-      <h2 style="background-color: #1F1F1F; margin: 0;">Work Experience</h2>
+      <h2 style="background-color: #9d9d9d; color:#09272c; margin: 0;">My Work Experience</h2>
     </ion-text>
     <ion-grid>
       <ion-row class="projects-row" style="width: 100%; height: 85vh;">
@@ -152,9 +142,9 @@
           <a href="https://www.instagram.com/jsbcoatings/" target="_blank">
             <ion-card class="card-experience" >
               <div class="ion-text-center" style="position:absolute">
-                <h1>JSB Coatings</h1>
-                <p style="padding-left: 15px; padding-right: 15px;">Founded and established a one man army powdercoating service. Specializing in 
-                  the automotive sector, refinishing performance wheels, parts, and much more!  
+                <h1 style="color:#1a1a1a">JSB Coatings</h1>
+                <p style="padding-left: 15px; padding-right: 15px; color:#272727">Founded and nurtured a one man army powdercoating service. Specializing in 
+                  automotive, refinishing performance wheels, parts, tools, and much more!  
                 </p>
               </div>
             </ion-card>
@@ -164,8 +154,8 @@
 
             <ion-card class="card-experience" style="box-shadow: 0 0 10px rgba(89, 92, 249, 0.6);">
               <div class="ion-text-center" style="position:absolute">
-                <h1>Blue Cross Blue Shield</h1>
-                <p style="padding-left: 15px; padding-right: 15px;">I served as an executive services intern where I shadowed appeals and grievances
+                <h1 style="color:#1a1a1a">Blue Cross Blue Shield</h1>
+                <p style="padding-left: 15px; padding-right: 15px; color:#272727">I served as an executive services intern where I shadowed appeals and grievances
                   analysts, and learned the process of handling client complaints. Furthermore, I had construcuted many documents for the executive team, the most
                   notable being the audit reports for the years 2021 and 2022.
                 </p>
@@ -178,22 +168,22 @@
   </div>
 
   <!--Education-->
-  <div style="background-color: #1F1F1F; padding-top: 40vh;">
+  <div style="background-color: #9d9d9d; padding-top: 40vh;">
     <ion-text>
-      <h2 style="background-color: #1F1F1F; margin: 0;">Education</h2>
+      <h2 style="background-color: #9d9d9d; margin: 0; color:#1a1a1a">Education</h2>
     </ion-text>
     <ion-grid>
       <ion-row class="projects-row" style="width: 100%; height: 85vh;">
         <ion-col size="12" style="margin-inline: auto; display: flex; justify-content: center; width:none !important; max-width: none !important; ">
-          <ion-card class="card-projects" style="height:350px; box-shadow:none;">
+    
             <div class="ion-text-center" style="position:absolute; padding:0; max-height:350px; overflow-y:none;">
-              <h1>Bachelors of Science in Computer Science</h1>
+              <h1 style="color:#272727">Bachelors of Science in Computer Science</h1>
               
               <ion-col size="12" style="margin-inline: auto; display: flex; justify-content: center; width:none !important; max-width: none !important; ">
                 <img src="../../assets/Wayne_State_University_seal.svg" alt="Wayne State University Seal" style="width: 200px; height: 200px; opacity: 0.7;">
             </ion-col><h1>2019 - 2023</h1>
             </div>
-          </ion-card>
+
       </ion-col>
 
       </ion-row>
@@ -201,9 +191,9 @@
   </div>
 
   <!--Socials-->
-  <div style="background-color: #1F1F1F; padding-top: 40vh;">
+  <div style="background-color: #9d9d9d;">
     <ion-text>
-      <h2 style="background-color: #1F1F1F; margin: 0;">Connect with me!</h2>
+      <h2 style="background-color: #9d9d9d; margin: 0; color:#1a1a1a;">Connect with me!</h2>
     </ion-text>
     <ion-grid>
       <ion-row style="width: 100%; height: 250px;">
